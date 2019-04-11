@@ -10,10 +10,15 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-@RequestMapping("/qq")
+@RequestMapping("")
 public class QQAuthController {
     @Autowired
     private QQAuthService qqAuthService;
+
+    @RequestMapping("/")
+    public String index(){
+        return "index.html";
+    }
 
     //如果前端没处理可以使用
     // 访问登陆页面，然后会跳转到 QQ 的登陆页面
