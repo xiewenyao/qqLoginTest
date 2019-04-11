@@ -1,0 +1,7 @@
+server:
+  port: 8080
+qqconf:
+  callback-url: http://lesaiw.jios.org:8601/qq/qqLogin   #QQ 在登陆成功后回调的 URL，这个 URL 必须在 QQ 互联里填写过
+  api-key: 101569998   #QQ 互联应用管理中心的 APP ID
+  api-secret: fddf7dba89ffebdef8bd07057e9e58a2 #QQ 互联应用管理中心的 APP Key
+  state: 100001     #状态值。用于第三方应用防止CSRF攻击,随便设置，回调时会返回
